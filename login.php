@@ -8,7 +8,7 @@ header("Expires: Thu, 01 Jan 1970 00:00:00 GMT");
 header("Pragma: no-cache");
 
 // Check if login is enabled in site settings
-$Sign_In = $DB->execute("SELECT value FROM settings WHERE name = 'login'", true)["value"];
+$Sign_In = $DB->execute("SELECT value FROM settings WHERE name = 'login'", true)["value"] ?? 1;
 if ($Sign_In == 0) {
     notification("Signing in has been temporarily disabled!","/");
     exit();

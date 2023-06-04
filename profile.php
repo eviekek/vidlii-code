@@ -4,7 +4,8 @@ require_once "_includes/init.php";
 if (strtoupper($_GET["user"]) == "WUFF") {
 	notification("Wuff is working hard, so piss off and let him work!","/","red");
 } else {
-if ($DB->execute("SELECT value FROM settings WHERE name = 'channels'", true)["value"] == 0) { notification("Channels have been temporarily disabled!","/"); exit(); }
+$profiles_enabled = $DB->execute("SELECT value FROM settings WHERE name = 'channels'", true)["value"] ?? 1;
+if ($profiles_enabled == 0) { notification("Channels have been temporarily disabled!","/"); exit(); }
 
 
 if (isset($_GET["user"])) {

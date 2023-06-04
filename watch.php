@@ -1,7 +1,7 @@
 <?php
 require_once "_includes/init.php";
-
-if ($DB->execute("SELECT value FROM settings WHERE name = 'videos'", true)["value"] == 0) { notification("The video page has been temporarily disabled!","/"); exit(); }
+$Videos_enabled = $DB->execute("SELECT value FROM settings WHERE name = 'videos'", true)["value"] ?? 1;
+if ($Videos_enabled == 0) { notification("The video page has been temporarily disabled!","/"); exit(); }
 
 $_VIDEO = new Video($_GET["v"],$DB);
 
