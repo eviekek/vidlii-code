@@ -47,6 +47,7 @@ if ($Page == "Messages") {
         $_PAGINATION->Total = $DB->execute("SELECT count(private_messages.id) as amount FROM private_messages WHERE to_user = :USERNAME", true, [":USERNAME" => $_USER->username])["amount"];
     } else {
         if (isset($_POST["search_input"]) && mb_strlen($_POST["search_input"]) >= 4) {
+            $Filtered_Search_Query = $_POST["search_input"];
 
             $Inbox = $DB->execute("SELECT private_messages.id, private_messages.from_user, private_messages.message, private_messages.subject, private_messages.date_sent, private_messages.seen, users.avatar, users.displayname FROM private_messages INNER JOIN users ON private_messages.from_user = users.username WHERE private_messages.to_user = :USERNAME AND (private_messages.message LIKE '% $Filtered_Search_Query %' OR private_messages.subject LIKE '% $Filtered_Search_Query %') ORDER BY private_messages.date_sent DESC LIMIT $_PAGINATION->From, $_PAGINATION->To", false, [":USERNAME" => $_USER->username]);
 
