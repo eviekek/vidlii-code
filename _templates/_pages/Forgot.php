@@ -6,7 +6,7 @@
         <div>
             <? if (!isset($_GET["code"])) : ?>
             <form action="/forgot_password" method="POST">
-            <img src="https://www.vidlii.com/img/vidlii.png" height="37" width="92" alt="VidLii" title="VidLii - Display Yourself.">
+            <img src="/img/vidlii.png" height="37" width="92" alt="VidLii" title="VidLii - Display Yourself.">
             <table cellpadding="3">
                 <tr>
                     <td align="right"><label for="lg_username">Username:</label></td>
@@ -25,7 +25,7 @@
             </form>
             <? else : ?>
                 <form action="/forgot_password?code=<?= $_GET["code"] ?>" method="POST">
-                    <img src="https://www.vidlii.com/img/vidlii.png" height="37" width="92" alt="VidLii" title="VidLii - Display Yourself.">
+                    <img src="/img/vidlii.png" height="37" width="92" alt="VidLii" title="VidLii - Display Yourself.">
                     <table cellpadding="3">
                         <tr>
                             <td align="right"><label for="lg_password">New Password:</label></td>

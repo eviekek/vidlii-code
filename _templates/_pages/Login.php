@@ -26,7 +26,7 @@
     <div class="you_wnt" id="login_box">
         <div>
             <form action="/login<? if (isset($_GET["activate"])) : ?>?activate=<?= $_GET["activate"] ?><? endif ?>" method="POST">
-            <img src="https://www.vidlii.com/img/vidlii.png" height="37" width="92" alt="VidLii" title="VidLii - Display Yourself.">
+            <img src="/img/vidlii.png" height="37" width="92" alt="VidLii" title="VidLii - Display Yourself.">
             <? if ($_PAGE->has_errors()) : ?>
                 <div style="color:red;text-align: center"><?= $_PAGE->return_errors()[0] ?></div>
             <? endif ?>

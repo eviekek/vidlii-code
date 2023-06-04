@@ -25,7 +25,7 @@
 </div>
 <div class="vc_r" style="margin-bottom: 0;">
     <h2 style="margin-top: 0;">Introduction</h2>
-    <p>This Privacy Policy governs the manner in which VidLii collects, uses, maintains and discloses information collected from users of the <a href="https://www.vidlii.com">www.VidLii.com</a> website.</p>
+    <p>This Privacy Policy governs the manner in which VidLii collects, uses, maintains and discloses information collected from users of the <a href="">www.VidLii.com</a> website.</p>
     <h2>Personal identification information</h2>
     <p>We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our site, register on the site, fill out a form, and in connection with other activities, services, features or resources we make available on our Site. Users may be asked for, as appropriate, an email address.</p>
     <h2>Non-personal identification information</h2>

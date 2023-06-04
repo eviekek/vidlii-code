@@ -40,7 +40,7 @@ if (!isset($_GET["code"]) && !isset($_GET["reject"])) {
                     $mail->isHTML(true);
 
                     $mail->Subject = 'VidLii Password';
-                    $mail->Body = 'You requested that your password should be reset, click on the link below if that is true:<br><br><strong><a href="https://www.vidlii.com/forgot_password?code=' . $Code . '">RECOVER</a></strong><br><br><br>If that is not true, please click the link below:<br><br><strong><a href="https://www.vidlii.com/forgot_password?reject=' . $Code . '">REJECT</a></strong>';
+                    $mail->Body = 'You requested that your password should be reset, click on the link below if that is true:<br><br><strong><a href="/forgot_password?code=' . $Code . '">RECOVER</a></strong><br><br><br>If that is not true, please click the link below:<br><br><strong><a href="/forgot_password?reject=' . $Code . '">REJECT</a></strong>';
 
                     $mail->send();
                     notification("Now check your email for instructions on how to recover your password!", "/login", "green");

@@ -45,7 +45,7 @@
             opacity: 0,
             color: "#ffffff",
             windPower: 0,
-            image: "https://www.vidlii.com/img/cursor2.png"
+            image: "/img/cursor2.png"
           });
           </script>
         <? endif ?>

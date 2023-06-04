@@ -49,7 +49,7 @@
 		position:absolute;
 	}
 </style>
-<script src="https://www.vidlii.com/js/vlUploader.js?4"></script>
+<script src="/js/vlUploader.js?4"></script>
 <div class="h_l">
 	<div class="you_wnt" id="old_upload_box">
 		<div>

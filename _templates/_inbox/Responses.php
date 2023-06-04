@@ -32,7 +32,7 @@
     }
 </style>
 <div class="inbox_bulk_actions">
-    <img src="https://www.vidlii.com/img/inbox_arrow.png"><button id="inblkr_accept" class="in_bulk search_button" disabled>Accept</button><button id="inblkr_decline" class="in_bulk search_button" disabled>Decline</button><button id="inblkr_read" class="in_bulk search_button" disabled>Mark Read</button><button id="inblkr_unread" class="in_bulk search_button" disabled>Mark Unread</button>
+    <img src="/img/inbox_arrow.png"><button id="inblkr_accept" class="in_bulk search_button" disabled>Accept</button><button id="inblkr_decline" class="in_bulk search_button" disabled>Decline</button><button id="inblkr_read" class="in_bulk search_button" disabled>Mark Read</button><button id="inblkr_unread" class="in_bulk search_button" disabled>Mark Unread</button>
 </div>
 <form id="inblk_form" method="post" action="/ajax/inbox_actions">
 <table cellpadding="0" cellspacing="0" border="0" style="width:100%" id="inbox_in">

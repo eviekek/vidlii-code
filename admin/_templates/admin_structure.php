@@ -5,7 +5,7 @@
     <title><?= $Page_Title ?> - VidLii Admin</title>
     <link rel="stylesheet" type="text/css" href="<?= CSS_FILE ?>">
     <!-- script src='https://www.google.com/recaptcha/api.js'></script -->
-    <script src="https://www.vidlii.com/js/jquery.js"></script>
+    <script src="/js/jquery.js"></script>
     <style>
         .panel_box {
             padding: 6px;

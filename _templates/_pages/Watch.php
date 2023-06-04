@@ -76,7 +76,7 @@
 <div id="vtbl">
         <noscript>
             <div id="noscript-player">
-                <video id="noscript-player-video" src="https://www.vidlii.com/usfi/v/<?= $URL ?>.<?= $FILENAME ?><?= ($ISHD and $HD_Enabled) ? ".720" : "" ?>.mp4" controls autoplay></video>
+                <video id="noscript-player-video" src="/usfi/v/<?= $URL ?>.<?= $FILENAME ?><?= ($ISHD and $HD_Enabled) ? ".720" : "" ?>.mp4" controls autoplay></video>
                 <? if($ISHD): ?>
                     <form action="" method="GET" id="noscript-player-hd">
                         <input type="hidden" name="v" value="<?= $_GET["v"] ?>">
@@ -268,7 +268,7 @@
 				<div id="w_l_cnts">
 					<img src="https://vidlii.kncdn.org/img/wse.png" id="w_sel" style="left:84px">
 					<div id="w_sh_cnt">
-						<span><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.vidlii.com/watch?v=<?= $URL ?>" target="_blank" onclick="playerInstance.pause(true)">Facebook</a></span><span><a href="https://twitter.com/home?status=I%20just%20watched%20this%20awesome%20video%3A%20https%3A//www.vidlii.com/watch?v=<?= $URL ?>" target="_blank" onclick="playerInstance.pause(true)">Twitter</a></span><span><a href="https://www.reddit.com/submit?url=https://www.vidlii.com/watch?v=<?= $URL ?>&title=<?= $Title ?>" target="_blank" onclick="playerInstance.pause(true)">Reddit</a></span>
+						<span><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.vidlii.com/watch?v=<?= $URL ?>" target="_blank" onclick="playerInstance.pause(true)">Facebook</a></span><span><a href="https://twitter.com/home?status=I%20just%20watched%20this%20awesome%20video%3A%20https%3A//www.vidlii.com/watch?v=<?= $URL ?>" target="_blank" onclick="playerInstance.pause(true)">Twitter</a></span><span><a href="https://www.reddit.com/submit?url=/watch?v=<?= $URL ?>&title=<?= $Title ?>" target="_blank" onclick="playerInstance.pause(true)">Reddit</a></span>
 					</div>
 					<div id="w_fv_cnt" class="hddn">
 						<? if (!$_USER->logged_in) : ?>

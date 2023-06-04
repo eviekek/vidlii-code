@@ -1,7 +1,7 @@
 <? if ((!$_USER->logged_in && $Recommended_Amount >= 4) || ($_USER->logged_in && $Modules["recommended"] && $Recommended_Amount >= 4)) : ?>
 <div class="wdg" id="rec_widget">
     <div>
-        <img src="https://www.vidlii.com/img/rec.png" alt="Recommended Videos"><span>Recommended Videos</span>
+        <img src="/img/rec.png" alt="Recommended Videos"><span>Recommended Videos</span>
         <div class="wdg_sel">
             <? if ($_USER->logged_in) : ?>
                 <div class="up1" onclick="move_up('rec_widget')"></div><div class="do1" onclick="move_down('rec_widget')"></div>

@@ -25,7 +25,7 @@
 </div>
 <div class="vc_r" style="margin-bottom: 0;">
     <h2 style="margin-top: 0;">Introduction</h2>
-    <p style="margin-top: 0;">Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the <a href="https://www.vidlii.com">www.VidLii.com</a> website (the "Service") operated by VidLii ("us", "we", or "our").</p>
+    <p style="margin-top: 0;">Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the <a href="">www.VidLii.com</a> website (the "Service") operated by VidLii ("us", "we", or "our").</p>
     <p>Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.</p>
     <p>By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.</p>
     <h2>Content</h2>

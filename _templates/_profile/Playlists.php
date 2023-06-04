@@ -15,7 +15,7 @@
                         <em>No Description...</em>
                     </div>
                     <div><a href="javascript:void(0)">Play All</a><br><a href="javascript:void(0)" onclick="copyToClipboard('#pls_<?= $Playlist["purl"] ?>');alert('Link copied to your clipboard!')">Share</a>
-                        <div id="pls_<?= $Playlist["purl"] ?>" style="display:none">https://www.vidlii.com/playlist?p=<?= $Playlist["purl"] ?></div>
+                        <div id="pls_<?= $Playlist["purl"] ?>" style="display:none">/playlist?p=<?= $Playlist["purl"] ?></div>
                     </div>
                 </div>
             <? endforeach ?>

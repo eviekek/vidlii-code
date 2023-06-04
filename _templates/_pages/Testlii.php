@@ -30,7 +30,7 @@
     Testlii let's you try out new features before anyone else so that VidLii can get feedback on them before they're publicly released.<br><br>
     <? if ($_USER->logged_in) : ?>
     <div style="position:relative;right:0">
-        <img src="https://www.vidlii.com/img/bell.png" style="float: left">
+        <img src="/img/bell.png" style="float: left">
         <div style="float:left;margin-left: 6px">
             <strong style="font-size:16px;display:block;margin-bottom:3px;margin-top:0">Social Homepage</strong>
             A more social homepage displayed in a Timeline. It shows the activity of your friends and subscriptions.<br>
@@ -41,7 +41,7 @@
     <div class="cl"></div>
     <? endif ?>
     <div style="position:relative;right:0;<? if ($_USER->logged_in) : ?>margin-top: 25px<? endif ?>">
-        <img src="https://www.vidlii.com/img/testlii1.png" style="float: left">
+        <img src="/img/testlii1.png" style="float: left">
         <div style="float:left;margin-left: 6px">
             <strong style="font-size:16px;display:block;margin-bottom:3px;margin-top:0">Compact Header</strong>
             This is a optional header which makes the website look a lot slimmer and a tiny bit more modern.<br>

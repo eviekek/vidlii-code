@@ -32,7 +32,7 @@
     <div id="partner_main">
         <div class="partner_box">
             <div style="float:left;width:56%">
-                <img src="https://www.vidlii.com/img/patne.png" style="width:100%;height:292px;">
+                <img src="/img/patne.png" style="width:100%;height:292px;">
             </div>
             <div style="float:left;width:36%;margin-left:45px;">
                 <div style="font-size:18px;font-weight:bold;margin-bottom:20px">
@@ -67,7 +67,7 @@
             <tbody>
             <tr style="vertical-align: top">
                 <td>
-                    <h3>Monetization<img src="https://www.vidlii.com/img/money.gif" width="44" height="40" style="vertical-align: middle;position:relative;bottom:3px;left: 11px;"></h3>
+                    <h3>Monetization<img src="/img/money.gif" width="44" height="40" style="vertical-align: middle;position:relative;bottom:3px;left: 11px;"></h3>
                     <p>As a VidLii partner, you will be able to make money off your content.</p>
                     <ul>
                         <li>Connect your existing Adsense account to your VidLii account.</li>
@@ -76,7 +76,7 @@
                     </ul>
                 </td>
                 <td>
-                    <h3>Insight<img src="https://www.vidlii.com/img/chart.gif" width="44" height="40" style="vertical-align: middle;position:relative;bottom:3px;left: 11px;"></h3>
+                    <h3>Insight<img src="/img/chart.gif" width="44" height="40" style="vertical-align: middle;position:relative;bottom:3px;left: 11px;"></h3>
                     <p>Use our Insight analytics tools to optimize your existing content and create more targeted content to satisfy your audience and advertisers.</p>
                     <ul>
                         <li>Learn about your audience demographics, and what they are watching</li>
@@ -89,7 +89,7 @@
             </tr>
             <tr style="vertical-align: top">
                 <td>
-                    <h3>Features<img src="https://www.vidlii.com/img/secret.gif" width="44" height="40" style="vertical-align: middle;position:relative;bottom:3px;left: 11px;"></h3>
+                    <h3>Features<img src="/img/secret.gif" width="44" height="40" style="vertical-align: middle;position:relative;bottom:3px;left: 11px;"></h3>
                     <p>VidLii can help you enhance your content and brand.</p>
                     <ul>
                         <li>Add a custom banner image above your video description.</li>
@@ -98,7 +98,7 @@
                     </ul>
                 </td>
                 <td>
-                    <h3>Quality<img src="https://www.vidlii.com/img/check.gif" width="44" height="40" style="vertical-align: middle;position:relative;bottom:3px;left: 11px;"></h3>
+                    <h3>Quality<img src="/img/check.gif" width="44" height="40" style="vertical-align: middle;position:relative;bottom:3px;left: 11px;"></h3>
                     <p>We will serve your videos reliably, and at the highest resolution possible.</p>
                     <ul>
                         <li>VidLii offers High Quality to it's users for particular content that merits a richer, lean-back viewing experience.</li>

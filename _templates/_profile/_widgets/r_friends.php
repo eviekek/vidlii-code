@@ -3,7 +3,7 @@
         Friends (<a href="/user/<?= $Profile["displayname"] ?>/friends"><?= number_format($Profile["friends"]) ?></a>)
         <? if ($Is_OWNER) : ?>
             <div style="float: right;position:relative;top:3px;word-spacing:-4px;cursor:pointer">
-                <img src="https://www.vidlii.com/img/uaa1.png" onclick="c_move_up('fr_r')"> <img src="https://www.vidlii.com/img/daa1.png" style="margin-right:2px" onclick="c_move_down('fr_r')"><img src="https://www.vidlii.com/img/laa1.png" onclick="move_hor('fr_r','fr_l')"> <img src="https://www.vidlii.com/img/raa0.png">
+                <img src="/img/uaa1.png" onclick="c_move_up('fr_r')"> <img src="/img/daa1.png" style="margin-right:2px" onclick="c_move_down('fr_r')"><img src="/img/laa1.png" onclick="move_hor('fr_r','fr_l')"> <img src="/img/raa0.png">
             </div>
         <? endif ?>
     </div>

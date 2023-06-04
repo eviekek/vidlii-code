@@ -51,7 +51,7 @@
     }
 </style>
 <div class="inbox_bulk_actions">
-    <img src="https://www.vidlii.com/img/inbox_arrow.png"><button id="inblk_del" class="in_bulk search_button" disabled>Delete</button><button id="inblk_read" class="in_bulk search_button" disabled>Mark Read</button><button id="inblk_unread" class="in_bulk search_button" disabled>Mark Unread</button>
+    <img src="/img/inbox_arrow.png"><button id="inblk_del" class="in_bulk search_button" disabled>Delete</button><button id="inblk_read" class="in_bulk search_button" disabled>Mark Read</button><button id="inblk_unread" class="in_bulk search_button" disabled>Mark Unread</button>
     <div class="inbox_search">
         <form action="/inbox?page=messages" method="POST">
             <input type="text" maxlength="64" name="search_input" required<? if (isset($_POST["search_input"])) : ?> value="<?= $_POST["search_input"] ?>"<? endif ?> placeholder="Search Messages"<? if (count($Inbox) == 0) : ?> disabled<? endif ?>><button name="search_inbox" class="search_button" type="submit"<? if (count($Inbox) == 0) : ?> disabled<? endif ?>>Search</button>

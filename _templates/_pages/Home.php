@@ -3,7 +3,7 @@
     <? if (!isset($_COOKIE["s"]) || !$_USER->logged_in) : ?>
     <? if ($_USER->logged_in) : ?>
         <div class="adh">
-            <a onclick="$('#mod_selector').toggleClass('hddn')" href="javascript:void(0)"><img src="https://www.vidlii.com/img/addh.png">Add / Remove Modules</a>
+            <a onclick="$('#mod_selector').toggleClass('hddn')" href="javascript:void(0)"><img src="/img/addh.png">Add / Remove Modules</a>
         </div>
         <div id="mod_selector" class="hddn">
             <div style="font-weight: bold;font-size:13px;margin-bottom:5px">Select the modules you want to appear on your homepage:</div>
@@ -256,10 +256,10 @@
             <span>Inbox</span>
         </div>
         <div id="inbox_wdg">
-            <div><div><img src="https://www.vidlii.com/img/amsg<? if ($Inbox_Amounts["messages"] == 0) : ?>0<? else : ?>1<? endif ?>.png" style="width:24px;bottom:3.5px"></div> <a href="/inbox?page=messages" style="bottom:1px;top:inherit"><?= number_format($Inbox_Amounts["messages"]) ?> Personal Message<? if ($Inbox_Amounts["messages"] == 0 || $Inbox_Amounts["messages"] > 1) : ?>s<? endif ?></a></div>
-            <div><div><img src="https://www.vidlii.com/img/acmt<? if ($Inbox_Amounts["comments"] == 0) : ?>0<? else : ?>1<? endif ?>.png" style="width:24px;height:18px;bottom:1px;left:0.5px"></div> <a href="/inbox?page=comments"><?= number_format($Inbox_Amounts["comments"]) ?> Comment<? if ($Inbox_Amounts["comments"] == 0 || $Inbox_Amounts["comments"] > 1) : ?>s<? endif ?></a></div>
-            <div><div><img src="https://www.vidlii.com/img/brsp<? if ($Inbox_Amounts["responses"] == 0) : ?>0<? else : ?>1<? endif ?>.png" style="width:24px;height:18px;bottom:1px;left:0.5px"></div> <a href="/inbox?page=responses"><?= $Inbox_Amounts["responses"] ?> Video Response<? if ($Inbox_Amounts["responses"] == 0 || $Inbox_Amounts["responses"] > 1) : ?>s<? endif ?></a></div>
-            <div><div><img src="https://www.vidlii.com/img/lfr<? if ($Inbox_Amounts["invites"] == 0) : ?>0<? else : ?>1<? endif ?>.png" style="width:24px;bottom:1.5px;left:0.5px;height:19px"></div> <a href="/inbox?page=invites"><?= number_format($Inbox_Amounts["invites"]) ?> Friend Invite<? if ($Inbox_Amounts["invites"] == 0 || $Inbox_Amounts["invites"] > 1) : ?>s<? endif ?></a></div>
+            <div><div><img src="/img/amsg<? if ($Inbox_Amounts["messages"] == 0) : ?>0<? else : ?>1<? endif ?>.png" style="width:24px;bottom:3.5px"></div> <a href="/inbox?page=messages" style="bottom:1px;top:inherit"><?= number_format($Inbox_Amounts["messages"]) ?> Personal Message<? if ($Inbox_Amounts["messages"] == 0 || $Inbox_Amounts["messages"] > 1) : ?>s<? endif ?></a></div>
+            <div><div><img src="/img/acmt<? if ($Inbox_Amounts["comments"] == 0) : ?>0<? else : ?>1<? endif ?>.png" style="width:24px;height:18px;bottom:1px;left:0.5px"></div> <a href="/inbox?page=comments"><?= number_format($Inbox_Amounts["comments"]) ?> Comment<? if ($Inbox_Amounts["comments"] == 0 || $Inbox_Amounts["comments"] > 1) : ?>s<? endif ?></a></div>
+            <div><div><img src="/img/brsp<? if ($Inbox_Amounts["responses"] == 0) : ?>0<? else : ?>1<? endif ?>.png" style="width:24px;height:18px;bottom:1px;left:0.5px"></div> <a href="/inbox?page=responses"><?= $Inbox_Amounts["responses"] ?> Video Response<? if ($Inbox_Amounts["responses"] == 0 || $Inbox_Amounts["responses"] > 1) : ?>s<? endif ?></a></div>
+            <div><div><img src="/img/lfr<? if ($Inbox_Amounts["invites"] == 0) : ?>0<? else : ?>1<? endif ?>.png" style="width:24px;bottom:1.5px;left:0.5px;height:19px"></div> <a href="/inbox?page=invites"><?= number_format($Inbox_Amounts["invites"]) ?> Friend Invite<? if ($Inbox_Amounts["invites"] == 0 || $Inbox_Amounts["invites"] > 1) : ?>s<? endif ?></a></div>
             <div style="text-align:center;border:0"><a href="/inbox?page=send_message">Send Message</a></div>
         </div>
     </div>
@@ -270,11 +270,11 @@
                 <span>Channel Statistics</span>
             </div>
             <div id="inbox_wdg" style="padding-bottom:1px">
-                <div><div><img src="https://www.vidlii.com/img/sme.png" style="width:24px;bottom:1.5px;left:0.5px;height:18px"></div> <span><?= number_format($Stats["subscribers"]) ?> Subscribers</span></div>
-                <div><div><img src="https://www.vidlii.com/img/sme.png" style="width:24px;bottom:1.5px;left:0.5px;height:18px"></div> <span><?= number_format($Stats["subscriptions"]) ?> Subscriptions</span></div>
-                <div><div><img src="https://www.vidlii.com/img/sme.png" style="width:24px;bottom:1.5px;left:0.5px;height:18px"></div> <span><?= number_format($Stats["friends"]) ?> Friends</span></div>
-                <div><div><img src="https://www.vidlii.com/img/brsp0.png" style="width:24px;height:18px;bottom:1px;left:0.5px"></div> <span style="top:2px"><?= number_format($Stats["video_views"]) ?> Video Views</span> </div>
-                <div style="border:0"><div><img src="https://www.vidlii.com/img/bchn.png" style="width:24px;height:18px;bottom:1px;left:0.5px"></div> <span style="top:2px"><?= number_format($Stats["channel_views"]) ?> Channel Views</span> </div>
+                <div><div><img src="/img/sme.png" style="width:24px;bottom:1.5px;left:0.5px;height:18px"></div> <span><?= number_format($Stats["subscribers"]) ?> Subscribers</span></div>
+                <div><div><img src="/img/sme.png" style="width:24px;bottom:1.5px;left:0.5px;height:18px"></div> <span><?= number_format($Stats["subscriptions"]) ?> Subscriptions</span></div>
+                <div><div><img src="/img/sme.png" style="width:24px;bottom:1.5px;left:0.5px;height:18px"></div> <span><?= number_format($Stats["friends"]) ?> Friends</span></div>
+                <div><div><img src="/img/brsp0.png" style="width:24px;height:18px;bottom:1px;left:0.5px"></div> <span style="top:2px"><?= number_format($Stats["video_views"]) ?> Video Views</span> </div>
+                <div style="border:0"><div><img src="/img/bchn.png" style="width:24px;height:18px;bottom:1px;left:0.5px"></div> <span style="top:2px"><?= number_format($Stats["channel_views"]) ?> Channel Views</span> </div>
             </div>
         </div>
     <? endif ?>

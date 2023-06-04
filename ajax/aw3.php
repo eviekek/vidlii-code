@@ -2,7 +2,7 @@
 header_remove();
 // If referer is not from VidLii, reject
 $origin = $_SERVER['HTTP_REFERER'];
-if (strpos($origin, "https://www.vidlii.com") !== 0) {
+if (strpos($origin, "") !== 0) {
 	if (strpos($origin, "https://vidlii.com") !== 0) {
 		die("error");
 	}	

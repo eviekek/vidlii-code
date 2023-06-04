@@ -68,7 +68,7 @@
 				  window.onload = function() {
 					setTimeout(function() {
 					  if ( typeof(window.google_jobrunner) === "undefined" ) {
-						$('#vtbl_desc').prepend("<a href='http://hanime.tv/' target='_blank'><img style='width:100%;margin-bottom:10px' src='https://www.vidlii.com/mead?url=<?= rand(0,10000000) * 1000000 ?>'></a>");
+						$('#vtbl_desc').prepend("<a href='http://hanime.tv/' target='_blank'><img style='width:100%;margin-bottom:10px' src='/mead?url=<?= rand(0,10000000) * 1000000 ?>'></a>");
 					  }
 					}, 1500);  
 				  };

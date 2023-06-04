@@ -123,11 +123,11 @@
         <div style="margin-top:18px;font-weight:bold">
             <div style="float:left;width:50%;text-align:center">
                 For Non-Subscribers:<br>
-                <input type="url" placeholder="https://www.vidlii.com/watch?v=..." name="n_url" autocomplete="off" value="<? if (!empty($Design["featured_n_url"])) : ?>https://www.vidlii.com/watch?v=<?= $Design["featured_n_url"] ?><? endif ?>" maxlength="128" style="width:222px;margin-top:4px;border: 1px solid #ababab;border-radius:0">
+                <input type="url" placeholder="/watch?v=..." name="n_url" autocomplete="off" value="<? if (!empty($Design["featured_n_url"])) : ?>/watch?v=<?= $Design["featured_n_url"] ?><? endif ?>" maxlength="128" style="width:222px;margin-top:4px;border: 1px solid #ababab;border-radius:0">
             </div>
             <div style="float:right;width:50%;text-align:center">
                 For Subscribers:<br>
-                <input type="url" placeholder="https://www.vidlii.com/watch?v=..." name="s_url" value="<? if (!empty($Design["featured_s_url"])) : ?>https://www.vidlii.com/watch?v=<?= $Design["featured_s_url"] ?><? endif ?>" maxlength="128" autocomplete="off" style="width:222px;margin-top:4px;border: 1px solid #ababab;border-radius:0">
+                <input type="url" placeholder="/watch?v=..." name="s_url" value="<? if (!empty($Design["featured_s_url"])) : ?>/watch?v=<?= $Design["featured_s_url"] ?><? endif ?>" maxlength="128" autocomplete="off" style="width:222px;margin-top:4px;border: 1px solid #ababab;border-radius:0">
             </div>
         </div>
     </div>

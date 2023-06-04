@@ -32,7 +32,7 @@
     }
 </style>
 <div class="inbox_bulk_actions">
-    <img src="https://www.vidlii.com/img/inbox_arrow.png"><button id="inblkc_del" class="in_bulk search_button" disabled>Delete</button><button id="inblkc_read" class="in_bulk search_button" disabled>Mark Read</button><button id="inblkc_unread" class="in_bulk search_button" disabled>Mark Unread</button>
+    <img src="/img/inbox_arrow.png"><button id="inblkc_del" class="in_bulk search_button" disabled>Delete</button><button id="inblkc_read" class="in_bulk search_button" disabled>Mark Read</button><button id="inblkc_unread" class="in_bulk search_button" disabled>Mark Unread</button>
     <div class="inbox_search">
         <select onchange="change_comment_inbox()" id="comment_filter" style="border-radius:0;padding:3px;margin-right:5px">
             <option value="all"<? if (!isset($_GET["t"])) : ?> selected<? endif ?>>All</option>

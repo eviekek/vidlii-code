@@ -119,7 +119,7 @@
         <? elseif ($Result == 12) : ?>
             <audio id="jp_audio_0" autoplay preload="metadata" src="http://anthemworld.com/~anthemwo/themesongs/Russia.mp3"></audio>
         <? elseif ($Result == 13) : ?>
-            <audio id="jp_audio_0" autoplay preload="metadata" src="https://www.vidlii.com/usfi/v/oatmel.mp3"></audio>
+            <audio id="jp_audio_0" autoplay preload="metadata" src="/usfi/v/oatmel.mp3"></audio>
         <? elseif ($Result == 14) : ?>
             <audio id="jp_audio_0" autoplay preload="metadata" src="http://anthemworld.com/~anthemwo/themesongs/Ghana.mp3"></audio>
         <? elseif ($Result == 15) : ?>
@@ -133,7 +133,7 @@
         <? elseif ($Result == 19) : ?>
             <audio id="jp_audio_0" autoplay preload="metadata" src="http://anthemworld.com/~anthemwo/themesongs/Zimbabwe.mp3"></audio>
         <? elseif ($Result == 20) : ?>
-            <audio id="jp_audio_0" autoplay preload="metadata" src="https://www.vidlii.com/usfi/v/tunak.mp3"></audio>
+            <audio id="jp_audio_0" autoplay preload="metadata" src="/usfi/v/tunak.mp3"></audio>
         <? else : ?>
             <audio id="jp_audio_0" autoplay preload="metadata" src="http://anthemworld.com/~anthemwo/themesongs/Japan.mp3"></audio>
         <? endif ?>

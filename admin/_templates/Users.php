@@ -172,7 +172,7 @@
 		<script>
 			var pageUrl = location.href;
 			if (pageUrl.indexOf("strike=") != -1) {
-				var videoUrl = "https://www.vidlii.com/watch?v=" + pageUrl.substr(pageUrl.indexOf("strike=") + 7, 11);
+				var videoUrl = "/watch?v=" + pageUrl.substr(pageUrl.indexOf("strike=") + 7, 11);
 				$('#strike_form').show();
 				$("textarea[name='strike_videos']").focus().val(videoUrl);
 				$("textarea[name='strike_note']").focus();

@@ -53,7 +53,7 @@
     <div class="you_wnt">
         <div class="con_bx">
             <div style="border-bottom:1px solid #ccc;padding-bottom:4px;margin-bottom:8px"><?= date("M d, Y",strtotime($Theme["upload_date"])) ?> by <a href="/user/<?= $Theme["owner"] ?>"><?= $Theme["owner"] ?></a></div>
-            <a href="/themes?t=<?= $Theme["url"] ?>"><img src="https://www.vidlii.com/usfi/img/<?= $Theme["url"] ?>_1.jpg" style="float:left;margin-right:7px" width="171" height="120" class="vid_th"></a>
+            <a href="/themes?t=<?= $Theme["url"] ?>"><img src="/usfi/img/<?= $Theme["url"] ?>_1.jpg" style="float:left;margin-right:7px" width="171" height="120" class="vid_th"></a>
             <a href="/themes?t=<?= $Theme["url"] ?>" style="font-size:16px;font-weight:bold"><?= $Theme["title"] ?></a>
             <div style="margin: 2px 0 0"><?= cut_string($Theme["description"],250) ?></div>
         </div>
@@ -81,8 +81,8 @@
     </div>
     <div style="margin-bottom:1px;padding-bottom:15px;border-bottom:1px solid #ccc;overflow:hidden">
         <div style="text-align:center;font-size:20px;font-weight:bold;margin-bottom:9px"><?= $Theme["title"] ?></div>
-        <img src="https://www.vidlii.com/usfi/img/<?= $Theme["url"] ?>_1.jpg" class="vid_th" style="width:322px;height:211px;float:left">
-        <img src="https://www.vidlii.com/usfi/img/<?= $Theme["url"] ?>_2.jpg" class="vid_th" style="width:322px;height:211px;float:right">
+        <img src="/usfi/img/<?= $Theme["url"] ?>_1.jpg" class="vid_th" style="width:322px;height:211px;float:left">
+        <img src="/usfi/img/<?= $Theme["url"] ?>_2.jpg" class="vid_th" style="width:322px;height:211px;float:right">
     </div>
     <div style="margin-bottom:15px;padding-bottom:1px;border-bottom:1px solid #ccc;overflow:hidden">
         <table cellspacing="25" style="width:80%;margin:0 auto">
@@ -115,7 +115,7 @@
     <? if ($_USER->logged_in && ($_USER->Is_Admin || $_USER->Is_Mod)) : ?>
        <div class="cl"></div>
        <div style="margin-top:15px">
-            <textarea style="width:99.5%" rows="10" readonly><?= file_get_contents("https://www.vidlii.com/usfi/css/".$_GET["t"].".css") ?></textarea>
+            <textarea style="width:99.5%" rows="10" readonly><?= file_get_contents("/usfi/css/".$_GET["t"].".css") ?></textarea>
            <div style="text-align:center">
             <? if ($Theme["accepted"] == 0) : ?>
             <a href="/themes?accept=<?= $_GET["t"] ?>">Accept Theme</a> |
@@ -227,7 +227,7 @@
             <div class="you_wnt">
                 <div class="con_bx" style="background: gray">
                     <div style="border-bottom:1px solid #ccc;overflow:hidden;padding-bottom:4px;margin-bottom:8px"><div style="float:left"><?= date("M d, Y",strtotime($Theme["upload_date"])) ?> by <a href="/user/<?= $Theme["owner"] ?>"><?= $Theme["owner"] ?></a></div><div style="float:right;font-weight:bold">Pending!</div></div>
-                    <a href="/themes?t=<?= $Theme["url"] ?>"><img src="https://www.vidlii.com/usfi/img/<?= $Theme["url"] ?>_1.jpg" style="float:left;margin-right:7px" width="171" height="120" class="vid_th"></a>
+                    <a href="/themes?t=<?= $Theme["url"] ?>"><img src="/usfi/img/<?= $Theme["url"] ?>_1.jpg" style="float:left;margin-right:7px" width="171" height="120" class="vid_th"></a>
                     <a href="/themes?t=<?= $Theme["url"] ?>" style="font-size:16px;font-weight:bold"><?= $Theme["title"] ?></a>
                     <div style="margin: 2px 0 0"><?= cut_string($Theme["description"],250) ?></div>
                 </div>
@@ -255,7 +255,7 @@
         <div class="you_wnt">
             <div class="con_bx" style="background: #feb" title="Installed Theme">
                 <div style="border-bottom:1px solid #ccc;overflow:hidden;padding-bottom:4px;margin-bottom:8px"><div style="float:left"><?= date("M d, Y",strtotime($Installed["upload_date"])) ?> by <a href="/user/<?= $Installed["owner"] ?>"><?= $Installed["owner"] ?></a></div><div style="float:right;font-weight:bold">Installed!</div></div>
-                <a href="/themes?t=<?= $Installed["url"] ?>"><img src="https://www.vidlii.com/usfi/img/<?= $Installed["url"] ?>_1.jpg" style="float:left;margin-right:7px" width="171" height="120" class="vid_th"></a>
+                <a href="/themes?t=<?= $Installed["url"] ?>"><img src="/usfi/img/<?= $Installed["url"] ?>_1.jpg" style="float:left;margin-right:7px" width="171" height="120" class="vid_th"></a>
                 <a href="/themes?t=<?= $Installed["url"] ?>" style="font-size:16px;font-weight:bold"><?= $Installed["title"] ?></a>
                 <div style="margin: 2px 0 0"><?= cut_string($Installed["description"],250) ?></div>
             </div>
@@ -267,7 +267,7 @@
             <div class="you_wnt">
                 <div class="con_bx" style="background: <? if ($Theme["accepted"] == 1) : ?>#d4e4ff<? else : ?>gray<? endif ?>">
                     <div style="border-bottom:1px solid #ccc;overflow:hidden;padding-bottom:4px;margin-bottom:8px"><div style="float:left"><?= date("M d, Y",strtotime($Theme["upload_date"])) ?> by <a href="/user/<?= $Theme["owner"] ?>"><?= $Theme["owner"] ?></a></div><div style="float:right;font-weight:bold">Made by you! <? if ($Theme["accepted"] == 0) : ?> | Pending!<? endif ?></div></div>
-                    <a href="/themes?t=<?= $Theme["url"] ?>"><img src="https://www.vidlii.com/usfi/img/<?= $Theme["url"] ?>_1.jpg" style="float:left;margin-right:7px" width="171" height="120" class="vid_th"></a>
+                    <a href="/themes?t=<?= $Theme["url"] ?>"><img src="/usfi/img/<?= $Theme["url"] ?>_1.jpg" style="float:left;margin-right:7px" width="171" height="120" class="vid_th"></a>
                     <a href="/themes?t=<?= $Theme["url"] ?>" style="font-size:16px;font-weight:bold"><?= $Theme["title"] ?></a>
                     <div style="margin: 2px 0 0"><?= cut_string($Theme["description"],250) ?></div>
                 </div>

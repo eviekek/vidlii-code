@@ -35,7 +35,7 @@ if (!empty($_POST["a"])) {
 
         $Source = "v";
 
-    } elseif ($Source == "https://www.vidlii.com/") {
+    } elseif ($Source == "/") {
 
         $Source = "h";
 
@@ -45,14 +45,14 @@ if (!empty($_POST["a"])) {
 
     } elseif (mb_strpos($Source, "/user/") !== false) {
 
-        $Source = str_replace("https://www.vidlii.com/user/", "", $Source);
+        $Source = str_replace("/user/", "", $Source);
 
         $Username = $DB->execute("SELECT username FROM users WHERE displayname = :SOURCE", true, [":SOURCE" => $Source]);
 
         if ($DB->RowNum == 0) { $Source = ""; }
         else                  { $Source = "?".$Username["username"]; }
 
-    } elseif (mb_strpos($Source, "https://www.vidlii.com") === false && filter_var($Source, FILTER_VALIDATE_URL)) {
+    } elseif (mb_strpos($Source, "") === false && filter_var($Source, FILTER_VALIDATE_URL)) {
 
         $Source = $Source;
 

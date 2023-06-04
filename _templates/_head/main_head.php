@@ -1,11 +1,11 @@
-<link rel="shortcut icon" href="https://www.vidlii.com/img/favicon.png" type="image/png">
+<link rel="shortcut icon" href="/img/favicon.png" type="image/png">
 <meta charset="utf-8">
 <title><? echo $_PAGE->Page_Title ?></title>
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
-<link rel="apple-touch-icon" href="https://www.vidlii.com/img/vl_app.png">
+<link rel="apple-touch-icon" href="/img/vl_app.png">
 
 <meta name="description" content="<? echo $_PAGE->Page_Description ?>">
 <meta name="keywords" content="<? echo $_PAGE->Page_Tags ?>">
@@ -15,9 +15,9 @@
 <meta property="og:url" content="<?= "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]" ?>">
 
 <? if ($_PAGE->Current_Page == "videos") : ?>
-<link rel="canonical" href="https://www.vidlii.com/videos">
+<link rel="canonical" href="/videos">
 <? elseif ($_PAGE->Current_Page == "channels") : ?>
-<link rel="canonical" href="https://www.vidlii.com/channels">
+<link rel="canonical" href="/channels">
 <? endif ?>
 
 <meta name="msapplication-tap-highlight" content="no">
@@ -52,8 +52,8 @@ $.ajax({type: "POST",url: "/mead?url=d", error: function() { alert("Disable your
     <meta property="datePublished" content="<?= date("Y-m-d",strtotime($_VIDEO->Info["uploaded_on"])) ?>">
 
     <meta property="og:type" content="video">
-    <meta property="og:video:url" content="https://www.vidlii.com/embed?v=<?= $URL ?>&a=0">
-    <meta property="og:video:secure_url" content="https://www.vidlii.com/embed?v=<?= $URL ?>&a=0">
+    <meta property="og:video:url" content="/embed?v=<?= $URL ?>&a=0">
+    <meta property="og:video:secure_url" content="/embed?v=<?= $URL ?>&a=0">
     <meta property="og:video:type" content="video/mp4">
     <meta property="og:video:width" content="640">
     <meta property="og:video:height" content="360">
@@ -64,20 +64,20 @@ $.ajax({type: "POST",url: "/mead?url=d", error: function() { alert("Disable your
     <meta property="twitter:title" content="<?= $_PAGE->Page_Title ?>" />
     <meta property="twitter:site" content="@VidLii" />
     <meta property="twitter:description" content="<?= $_PAGE->Page_Description ?>" />
-    <meta property="twitter:player" content="https://www.vidlii.com/embed?v=<?= $URL ?>&a=0" />
+    <meta property="twitter:player" content="/embed?v=<?= $URL ?>&a=0" />
     <meta property="twitter:player:width" content="640" />
     <meta property="twitter:player:height" content="360" />
-    <meta property="twitter:image" content="https://www.vidlii.com/usfi/thmp/<?= $URL ?>.jpg" />
+    <meta property="twitter:image" content="/usfi/thmp/<?= $URL ?>.jpg" />
 <? endif ?>
 
 <? if (($_PAGE->Current_Page == "watch" or $_PAGE->Current_Page == "profile" or $_PAGE->Current_Page == "community" or $_PAGE->Current_Page == "index" or $_PAGE->Current_Page == "my_playback") && isset($Player)) : ?>
 <? if ($Player == 1) : ?>
-        <script src="https://www.vidlii.com/jwplayer2/jwplayer.js"></script>
+        <script src="/jwplayer2/jwplayer.js"></script>
         <script>jwplayer.key="pC5h3OO+44j2Ht66GosiwI/yBi8Kp1KC8cZL/g=="</script>
         <? if ($_USER->logged_in && $_USER->Is_Admin && 0) : ?>
-            <script src="https://www.vidlii.com/js/modern_player.js?<?=rand(0,999999)?>"></script>
+            <script src="/js/modern_player.js?<?=rand(0,999999)?>"></script>
         <? else : ?>
-            <script src="https://www.vidlii.com/js/modern_player.js?<?=$VLPVERSION?>"></script>
+            <script src="/js/modern_player.js?<?=$VLPVERSION?>"></script>
         <? endif ?>
     <? else : ?>
 		<? if ($_USER->Is_Admin && 0) : ?>
@@ -85,7 +85,7 @@ $.ajax({type: "POST",url: "/mead?url=d", error: function() { alert("Disable your
 		<script>swfobject.registerObject("flPlayer", "9.0.0");</script>
 		<script>window.vlpv = <?=$VLPVERSION?>;</script>
 		<? else : ?>
-        <script src="https://www.vidlii.com/vlPlayer/main19.js?<?=$VLPVERSION?>"></script>
+        <script src="/vlPlayer/main19.js?<?=$VLPVERSION?>"></script>
 		<script>swfobject.registerObject("flPlayer", "9.0.0");</script>
 		<script>window.vlpv = <?=$VLPVERSION?>;</script>
 		<? endif ?>

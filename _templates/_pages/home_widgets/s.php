@@ -1,7 +1,7 @@
 <? if ($_USER->logged_in && $Modules["subscriptions"]) : ?>
 <div class="wdg" id="sub_widget">
     <div>
-        <a href="/my_subscriptions"><img src="https://www.vidlii.com/img/sub.png" alt="Subscriptions"><span>Subscriptions</span></a>
+        <a href="/my_subscriptions"><img src="/img/sub.png" alt="Subscriptions"><span>Subscriptions</span></a>
         <div class="wdg_sel">
             <? if ($_USER->logged_in) : ?>
                 <div class="up1" onclick="move_up('sub_widget')"></div><div class="do1" onclick="move_down('sub_widget')"></div>

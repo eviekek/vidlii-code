@@ -1,7 +1,7 @@
 <? if (!$_USER->logged_in || ($_USER->logged_in && $Modules["being_watched"])) : ?>
 <div class="wdg" id="be_widget">
     <div>
-        <a href="/special_videos?c=0&t=b"><img src="https://www.vidlii.com/img/bw.png" alt="Videos Being Watched Now"><span>Videos Being Watched Now</span></a>
+        <a href="/special_videos?c=0&t=b"><img src="/img/bw.png" alt="Videos Being Watched Now"><span>Videos Being Watched Now</span></a>
         <div class="wdg_sel">
             <? if ($_USER->logged_in) : ?>
                 <div class="up1" onclick="move_up('be_widget')"></div><div class="do1" onclick="move_down('be_widget')"></div>

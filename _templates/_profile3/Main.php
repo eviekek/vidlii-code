@@ -31,10 +31,10 @@
                 <form action="/user/<?= $_USER->displayname ?>" method="POST">
                 <div style="margin:0 auto;width:64%">
                     <div style="text-align:center;border-radius:3px;white-space:nowrap;background-color:white;padding:6px">
-                        <input type="url" maxlength="128" autocomplete="off" name="n_url" value="<? if (!empty($Profile["featured_n_url"])) : ?>https://www.vidlii.com/watch?v=<?= $Profile["featured_n_url"] ?><? endif ?>" style="width:371px;padding:7px;background-color:#f5f5f5" placeholder="Video URL for Non-Subscribers">
+                        <input type="url" maxlength="128" autocomplete="off" name="n_url" value="<? if (!empty($Profile["featured_n_url"])) : ?>/watch?v=<?= $Profile["featured_n_url"] ?><? endif ?>" style="width:371px;padding:7px;background-color:#f5f5f5" placeholder="Video URL for Non-Subscribers">
                     </div>
                     <div style="text-align:center;border-radius:3px;margin-top:15px;white-space:nowrap;background-color:white;padding:6px">
-                        <input type="url" maxlength="128" autocomplete="off" name="s_url" value="<? if (!empty($Profile["featured_s_url"])) : ?>https://www.vidlii.com/watch?v=<?= $Profile["featured_s_url"] ?><? endif ?>" style="width:371px;padding:7px;background-color:#f5f5f5" placeholder="Video URL for Subscribers">
+                        <input type="url" maxlength="128" autocomplete="off" name="s_url" value="<? if (!empty($Profile["featured_s_url"])) : ?>/watch?v=<?= $Profile["featured_s_url"] ?><? endif ?>" style="width:371px;padding:7px;background-color:#f5f5f5" placeholder="Video URL for Subscribers">
                     </div>
                 </div>
                 <div style="position:absolute;top:10px;left:10px">

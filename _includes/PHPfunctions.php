@@ -215,23 +215,23 @@ function old_show_ratings($Ratings,$width,$height) {
 	$StarNum    = 0;
 	for($x = 0;$x < $Full_Stars;$x++) {
 		$StarNum++;
-		echo "<img src='https://www.vidlii.com/img/full_star.png' width='$width' height='$height'> ";
+		echo "<img src='/img/full_star.png' width='$width' height='$height'> ";
 	}
 	if ($Half_Stars !== false) {
 		$StarNum++;
 		if ($Full_Stars !== "4") {
-			echo "<img src='https://www.vidlii.com/img/half_star.png' width='$width' height='$height'> ";
+			echo "<img src='/img/half_star.png' width='$width' height='$height'> ";
 		} else {
 			if ($Half_Stars == "8" or $Half_Stars == "9") {
-				echo "<img src='https://www.vidlii.com/img/full_star.png' width='$width' height='$height'> ";
+				echo "<img src='/img/full_star.png' width='$width' height='$height'> ";
 			} else {
-				echo "<img src='https://www.vidlii.com/img/full_star.png' width='$width' height='$height'> ";
+				echo "<img src='/img/full_star.png' width='$width' height='$height'> ";
 			}
 		}
 	}
 	while($StarNum !== 5) {
 		$StarNum++;
-		echo "<img src='https://www.vidlii.com/img/no_star.png' width='$width' height='$height'> ";
+		echo "<img src='/img/no_star.png' width='$width' height='$height'> ";
 	}
 }
 
@@ -261,23 +261,23 @@ function show_ratings($Ratings,$width,$height) {
 	$StarNum    = 0;
 	for($x = 0;$x < $Full_Stars;$x++) {
 		$StarNum++;
-		echo "<img src='https://www.vidlii.com/img/full_star.png' width='$width' height='$height'>";
+		echo "<img src='/img/full_star.png' width='$width' height='$height'>";
 	}
 	if ($Half_Stars !== false) {
 		$StarNum++;
 		if ($Full_Stars !== "4") {
-			echo "<img src='https://www.vidlii.com/img/half_star.png' width='$width' height='$height'>";
+			echo "<img src='/img/half_star.png' width='$width' height='$height'>";
 		} else {
 			if ($Half_Stars == "8" or $Half_Stars == "9") {
-				echo "<img src='https://www.vidlii.com/img/full_star.png' width='$width' height='$height'>";
+				echo "<img src='/img/full_star.png' width='$width' height='$height'>";
 			} else {
-				echo "<img src='https://www.vidlii.com/img/full_star.png' width='$width' height='$height'>";
+				echo "<img src='/img/full_star.png' width='$width' height='$height'>";
 			}
 		}
 	}
 	while($StarNum !== 5) {
 		$StarNum++;
-		echo "<img src='https://www.vidlii.com/img/no_star.png' width='$width' height='$height'>";
+		echo "<img src='/img/no_star.png' width='$width' height='$height'>";
 	}
 }
 
@@ -307,23 +307,23 @@ function return_ratings($Ratings,$width,$height) {
 	$StarNum    = 0;
 	for($x = 0;$x < $Full_Stars;$x++) {
 		$StarNum++;
-		$Return .= "<img src='https://www.vidlii.com/img/full_star.png' width='$width' height='$height'>";
+		$Return .= "<img src='/img/full_star.png' width='$width' height='$height'>";
 	}
 	if ($Half_Stars !== false) {
 		$StarNum++;
 		if ($Full_Stars !== "4") {
-			$Return .= "<img src='https://www.vidlii.com/img/half_star.png' width='$width' height='$height'>";
+			$Return .= "<img src='/img/half_star.png' width='$width' height='$height'>";
 		} else {
 			if ($Half_Stars == "8" or $Half_Stars == "9") {
-				$Return .= "<img src='https://www.vidlii.com/img/full_star.png' width='$width' height='$height'>";
+				$Return .= "<img src='/img/full_star.png' width='$width' height='$height'>";
 			} else {
-				$Return .= "<img src='https://www.vidlii.com/img/full_star.png' width='$width' height='$height'>";
+				$Return .= "<img src='/img/full_star.png' width='$width' height='$height'>";
 			}
 		}
 	}
 	while($StarNum !== 5) {
 		$StarNum++;
-		$Return .=  "<img src='https://www.vidlii.com/img/no_star.png' width='$width' height='$height'>";
+		$Return .=  "<img src='/img/no_star.png' width='$width' height='$height'>";
 	}
 	return $Return;
 }
@@ -373,7 +373,7 @@ function email_domain($Email) {
 
 function video_thumbnail($URL,$LENGTH,$Width,$Height,$Title = NULL) {
 	if (!empty($LENGTH) || $LENGTH == "0") { $Length = seconds_to_time((int)$LENGTH); } else { $Length = $LENGTH; }
-	if (file_exists("usfi/thmp/$URL.jpg")) { $Thumbnail = "/usfi/thmp/$URL.jpg"; } else { $Thumbnail = "https://www.vidlii.com/img/no_th.jpg"; }
+	if (file_exists("usfi/thmp/$URL.jpg")) { $Thumbnail = "/usfi/thmp/$URL.jpg"; } else { $Thumbnail = "/img/no_th.jpg"; }
 
 	return '<div class="th"><div class="th_t">'.$Length.'</div><a href="/watch?v='.$URL.'"><img class="vid_th" loading="lazy" src="'.$Thumbnail.'" width="'.$Width.'" height="'.$Height.'"></a></div>';
 }
@@ -382,10 +382,10 @@ function user_avatar($User,$Width,$Height,$Avatar,$Border = "") {
 	if (strpos($Avatar,"u=") !== false) { $Avatar = str_replace("u=","",$Avatar); $Folder = "avt"; } else { $Upload = false; $Folder = "thmp"; }
 
 	if (empty($Avatar) or !file_exists("usfi/$Folder/$Avatar.jpg")) {
-		$Avatar = "https://www.vidlii.com/img/no_avatar.png";
+		$Avatar = "/img/no_avatar.png";
 	} else {
 		if ($Folder == "avt") {
-			$Avatar = "https://www.vidlii.com/usfi/avt/$Avatar.jpg";
+			$Avatar = "/usfi/avt/$Avatar.jpg";
 		} else {
 			$Avatar = "/usfi/thmp/$Avatar.jpg";
 		}
@@ -397,10 +397,10 @@ function user_avatar2($User,$Width,$Height,$Avatar,$Extra_Class = "") {
 	if (strpos($Avatar,"u=") !== false) { $Avatar = str_replace("u=","",$Avatar); $Folder = "avt"; } else { $Upload = false; $Folder = "thmp"; }
 
 	if (empty($Avatar) or !file_exists("usfi/$Folder/$Avatar.jpg")) {
-		$Avatar = "https://www.vidlii.com/img/no.png";
+		$Avatar = "/img/no.png";
 	} else {
 		if ($Folder == "avt") {
-			$Avatar = "https://www.vidlii.com/usfi/avt/$Avatar.jpg";
+			$Avatar = "/usfi/avt/$Avatar.jpg";
 		} else {
 			$Avatar = "/usfi/thmp/$Avatar.jpg";
 		}

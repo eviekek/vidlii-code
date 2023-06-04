@@ -4,7 +4,7 @@
             Recent Activity
             <? if ($Is_OWNER) : ?>
                 <div style="float: right;position:relative;top:2.5px;word-spacing:-4px;cursor:pointer">
-                    <img src="https://www.vidlii.com/img/uaa1.png" onclick="c_move_up('recent_activity2')"> <img src="https://www.vidlii.com/img/daa1.png" style="margin-right:2px" onclick="c_move_down('recent_activity2')"><img src="https://www.vidlii.com/img/laa0.png"> <img src="https://www.vidlii.com/img/raa1.png" onclick="move_hor('recent_activity2','recent_activity3')">
+                    <img src="/img/uaa1.png" onclick="c_move_up('recent_activity2')"> <img src="/img/daa1.png" style="margin-right:2px" onclick="c_move_down('recent_activity2')"><img src="/img/laa0.png"> <img src="/img/raa1.png" onclick="move_hor('recent_activity2','recent_activity3')">
                 </div>
                 <div style="margin-right:10px;float:right">
                     <a href="javascript:void(0)" onclick="$('#edit_ra2').toggleClass('hddn')">Edit</a>
@@ -40,13 +40,13 @@
                         <? $Count++ ?>
                         <? if ($Activity["type_name"] == "bulletin") : ?>
                             <tr id="b2_<?= $Activity["id"] ?>">
-                                <td valign="top" width="20"<? if ($Count == $Amount) : ?> style="border:0"<? endif ?>><img src="https://www.vidlii.com/img/ra1.png"></td>
+                                <td valign="top" width="20"<? if ($Count == $Amount) : ?> style="border:0"<? endif ?>><img src="/img/ra1.png"></td>
                                 <td<? if ($Count == $Amount) : ?> style="border:0"<? endif ?>><strong><?= $Profile["displayname"] ?></strong> <?= $Activity["content"] ?> <span>(<?= str_replace(" ","&nbsp;",time_ago($Activity["date"])) ?>)</span></td>
                                 <? if ($Is_OWNER) : ?><td width="18" valign="middle" <? if ($Count == $Amount) : ?> style="border:0"<? endif ?>><a href="javascript:void(0)" style="text-decoration: none" title="Delete" onclick="delete_bulletin(<?= $Activity["id"] ?>)">X</a></td><? endif ?>
                             </tr>
                         <? elseif ($Activity["type_name"] == "comment") : ?>
                             <tr>
-                                <td valign="top" width="20"<? if ($Count == $Amount) : ?> style="border:0"<? endif ?>><img src="https://www.vidlii.com/img/ra2.png" style="height:16px;position:relative;left:1px"></td>
+                                <td valign="top" width="20"<? if ($Count == $Amount) : ?> style="border:0"<? endif ?>><img src="/img/ra2.png" style="height:16px;position:relative;left:1px"></td>
                                 <td<? if ($Count == $Amount) : ?> style="border:0"<? endif ?>><strong><?= $Profile["displayname"] ?> commented on a video </strong><span>(<?= str_replace(" ","&nbsp;",time_ago($Activity["date"])) ?>)</span><br>
                                     <div style="float:left;margin:4px 4px 0 0"><?= video_thumbnail($Activity["id"],"",74,56,$Activity["title"]) ?></div><div style="width:71%;float:left;margin-top:4px;"><a href="/watch?v=<?= $Activity["id"] ?>"><?= cut_string($Activity["title"],35) ?></a><br><?= cut_string($Activity["content"],150) ?></div>
                                 </td>
@@ -54,7 +54,7 @@
                             </tr>
                         <? elseif ($Activity["type_name"] == "favorite") : ?>
                             <tr>
-                                <td valign="top" width="20"<? if ($Count == $Amount) : ?> style="border:0"<? endif ?>><img src="https://www.vidlii.com/img/ra3.png" style="height:15.5px;width:15.5px;position:relative;left:1.2px;top:0.5px"></td>
+                                <td valign="top" width="20"<? if ($Count == $Amount) : ?> style="border:0"<? endif ?>><img src="/img/ra3.png" style="height:15.5px;width:15.5px;position:relative;left:1.2px;top:0.5px"></td>
                                 <td<? if ($Count == $Amount) : ?> style="border:0"<? endif ?>><strong><?= $Profile["displayname"] ?> favorited a video </strong><span>(<?= str_replace(" ","&nbsp;",time_ago($Activity["date"])) ?>)</span><br>
                                     <div style="float:left;margin:4px 4px 0 0"><?= video_thumbnail($Activity["id"],"",74,56,$Activity["title"]) ?></div><div style="width:71%;float:left;margin-top:4px;"><a href="/watch?v=<?= $Activity["id"] ?>"><?= cut_string($Activity["title"],35) ?></a><br><?= cut_string($Activity["content"],150) ?></div>
                                 </td>
@@ -62,7 +62,7 @@
                             </tr>
                         <? elseif ($Activity["type_name"] == "friend") : ?>
                             <tr id="b_<?= $Activity["id"] ?>">
-                                <td valign="top" width="20"<? if ($Count == $Amount) : ?> style="border:0"<? endif ?>><img src="https://www.vidlii.com/img/ra4.png" style="width: 15px;height:16px;position:relative;left:1.5px"></td>
+                                <td valign="top" width="20"<? if ($Count == $Amount) : ?> style="border:0"<? endif ?>><img src="/img/ra4.png" style="width: 15px;height:16px;position:relative;left:1.5px"></td>
                                 <td<? if ($Count == $Amount) : ?> style="border:0"<? endif ?>><strong><?= $Profile["displayname"] ?> became friends with <? if ($Activity["id"] == $Profile["displayname"]) : ?><a href="/user/<?= $Activity["content"] ?>"><?= $Activity["content"] ?></a><? else : ?><a href="/user/<?= $Activity["id"] ?>"><?= $Activity["id"] ?></a><? endif ?></strong> <span>(<?= str_replace(" ","&nbsp;",time_ago($Activity["date"])) ?>)</span></td>
                                 <td></td>
                             </tr>

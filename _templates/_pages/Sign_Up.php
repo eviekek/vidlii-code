@@ -24,7 +24,7 @@
 </aside>
 <section class="re_r">
     <div class="you_wnt" id="re_box">
-        <script src="https://www.vidlii.com/js/pw_check2.js"></script>
+        <script src="/js/pw_check2.js"></script>
         <div>
             <form action="/register" method="POST" name="userform" onsubmit="return submit_button(document.forms.userform.password.value)">
             <h3>Join VidLii</h3>

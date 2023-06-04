@@ -20,18 +20,18 @@
     </div>
 </div>
 <div class="vc_r" style="margin-bottom:0">
-    <img src="https://www.vidlii.com/img/vidlii.png" style="width:122px;height:52px;float:left;margin-right:8px"><strong>VidLii anywhere, any time</strong>. The VidLii API allows you to integrate VidLii's video content and functionality into your website, software application, or device.
+    <img src="/img/vidlii.png" style="width:122px;height:52px;float:left;margin-right:8px"><strong>VidLii anywhere, any time</strong>. The VidLii API allows you to integrate VidLii's video content and functionality into your website, software application, or device.
     <div style="clear:both"></div>
     <div style="margin-top: 33px">
-        <img src="https://www.vidlii.com/img/chart_api.gif" style="float:left;margin-right:8px"><strong style="font-size:16px">Data API</strong><div style="font-size:14px">The VidLii Data API allows you to <strong>easily</strong> retrieve information of different parts on the website for your own use.</div>
+        <img src="/img/chart_api.gif" style="float:left;margin-right:8px"><strong style="font-size:16px">Data API</strong><div style="font-size:14px">The VidLii Data API allows you to <strong>easily</strong> retrieve information of different parts on the website for your own use.</div>
     </div>
     <div style="clear:both"></div>
     <div class="u_sct" style="border-bottom:1px solid #ccc;padding-bottom:6px;margin-top:15px">
-        <img src="https://www.vidlii.com/img/clp00.png">
+        <img src="/img/clp00.png">
         <span class="u_sct_hd">User Data</span>
     </div>
     <div style="display:none">
-        <div style="margin-bottom:3px;padding-bottom:3px">Example Call: <a href="/api?ty=user&ta=VidLii">https://www.vidlii.com/api?ty=user&ta=VidLii</a></div>
+        <div style="margin-bottom:3px;padding-bottom:3px">Example Call: <a href="/api?ty=user&ta=VidLii">/api?ty=user&ta=VidLii</a></div>
         <div style="border:1px solid #dddddd;padding:5px;margin-bottom:4px">
             <strong style="display:block">Output:</strong>
             <pre style="margin:0">
@@ -55,17 +55,17 @@
     "title":"",
     "description":"",
     "tags":"",
-    "avatar":"https://www.vidlii.com/usfi/avt/qBXfvJKwfJ1.jpg"
+    "avatar":"/usfi/avt/qBXfvJKwfJ1.jpg"
 }</pre>
         </div>
         <strong>Important:</strong> Getting the result: "false" means that this user has hidden this value from his / her channel.<br>
     </div>
     <div class="u_sct" style="border-bottom:1px solid #ccc;padding-bottom:6px;margin-top:15px">
-        <img src="https://www.vidlii.com/img/clp00.png">
+        <img src="/img/clp00.png">
         <span class="u_sct_hd">Video Data</span>
     </div>
     <div style="display:none">
-        <div style="margin-bottom:3px;padding-bottom:3px">Example Call: <a href="/api?ty=video&ta=xsc2P_KnbWI">https://www.vidlii.com/api?ty=video&ta=xsc2P_KnbWI</a></div>
+        <div style="margin-bottom:3px;padding-bottom:3px">Example Call: <a href="/api?ty=video&ta=xsc2P_KnbWI">/api?ty=video&ta=xsc2P_KnbWI</a></div>
         <div style="border:1px solid #dddddd;padding:5px;margin-bottom:4px">
             <strong style="display:block">Output:</strong>
             <pre style="margin:0">
@@ -96,11 +96,11 @@
         "&limit=16,0" sets the amount and offset of returned comments/video responses (Default is "16, Offset 0")
     </div>
     <div class="u_sct" style="border-bottom:1px solid #ccc;padding-bottom:6px;margin-top:15px">
-        <img src="https://www.vidlii.com/img/clp00.png">
+        <img src="/img/clp00.png">
         <span class="u_sct_hd">VidLii Data</span>
     </div>
     <div style="display:none">
-        <div style="margin-bottom:3px;padding-bottom:3px">Example Call: <a href="/api?ty=Vidlii&ta=featured">https://www.vidlii.com/api?ty=Vidlii&ta=featured</a></div>
+        <div style="margin-bottom:3px;padding-bottom:3px">Example Call: <a href="/api?ty=Vidlii&ta=featured">/api?ty=Vidlii&ta=featured</a></div>
         <div style="border:1px solid #dddddd;padding:5px;margin-bottom:4px">
             <strong style="display:block">Output:</strong>
             <pre style="margin:0">

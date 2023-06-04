@@ -116,7 +116,7 @@
 				</tr>
 				</tbody>
 			</table>
-			<div class="connect_lnk"><a href="https://www.vidlii.com/user/<?= $Profile["displayname"] ?>">https://www.vidlii.com/user/<?= $Profile["displayname"] ?></a></div>
+			<div class="connect_lnk"><a href="/user/<?= $Profile["displayname"] ?>">/user/<?= $Profile["displayname"] ?></a></div>
 		</div>
 	</section>
     <? foreach (explode(",",$Profile["modules_vertical_l"]) as $Module_l) : ?>
@@ -285,7 +285,7 @@
 								<em>No Description...</em>
 							</div>
 							<div><a href="javascript:void(0)">Play All</a><br><a href="javascript:void(0)" onclick="copyToClipboard('#pls_<?= $Playlist["purl"] ?>');alert('Link copied to your clipboard!')">Share</a><? if ($Is_OWNER) : ?><br><a href="javascript:void(0)" onclick="remove_pl('<?= $Playlist["purl"] ?>')">Remove</a><? endif ?>
-							<div id="pls_<?= $Playlist["purl"] ?>" style="display:none">https://www.vidlii.com/playlist?p=<?= $Playlist["purl"] ?></div>
+							<div id="pls_<?= $Playlist["purl"] ?>" style="display:none">/playlist?p=<?= $Playlist["purl"] ?></div>
 							</div>
 						</div>
 					<? endforeach ?>

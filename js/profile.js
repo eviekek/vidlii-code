@@ -69,7 +69,7 @@ function get_video_info(e) {
                 window.modernPlayer = new ModernPlayer({
                     instance: jwplayer("vlplayer"),
                     duration: t.length,
-                    videoUrl: "https://www.vidlii.com/watch?v=" + e,
+                    videoUrl: "/watch?v=" + e,
                     src: "/usfi/v/" + e + "." + t.file + ".mp4",
                     hdsrc: 1 == t.hd ? "/usfi/v/" + e + "." + t.file + ".720.mp4" : null,
                     startinhd: "1" == getCookie("vlphd"),
@@ -82,7 +82,7 @@ function get_video_info(e) {
                     hdsrc: 1 == t.hd ? "/usfi/v/" + e + "." + t.file + ".720.mp4" : null,
                     preview: "/usfi/thmp/" + e + ".jpg",
                     duration: t.length,
-                    videoUrl: "https://www.vidlii.com/watch?v=" + e,
+                    videoUrl: "/watch?v=" + e,
                     autoplay: !0
                 });
             }
@@ -465,7 +465,7 @@ $("#pl_inf_i").click(function() {
     })
 }), $("#pl_inf_s").click(function() {
     var e = $("#pl_url").html();
-    $("#pl_inf_i").removeClass("pl_nav_sel"), $("#pl_inf_f").removeClass("pl_nav_sel"), $("#pl_inf_s").addClass("pl_nav_sel"), $("#pl_inf_p").removeClass("pl_nav_sel"), $("#pl_inf_fl").removeClass("pl_nav_sel"), $("#nav_ind").css("left", "179px"), $("#pl_inf").html("<div style='font-size:14px;text-align:center'><div style='font-size:16px;margin-bottom:10px'>Share this Video with others:</div>Permalink:<br><input style='width: 300px;-moz-user-select: all;-ms-user-select: all;-webkit-user-select: all;user-select: all;text-align:center' type='text' value='https://www.vidlii.com/watch?v=" + e + "' readonly><br><br>Embed Link:<br><input style='width: 300px;-moz-user-select: all;-ms-user-select: all;-webkit-user-select: all;user-select: all;text-align:center' type='text' value='https://www.vidlii.com/embed?v=" + e + "' readonly><br><br><br><a href='#'>Twitter</a> || <a href='#'>Facebook</a> || <a href='#'>Reddit</a></div>")
+    $("#pl_inf_i").removeClass("pl_nav_sel"), $("#pl_inf_f").removeClass("pl_nav_sel"), $("#pl_inf_s").addClass("pl_nav_sel"), $("#pl_inf_p").removeClass("pl_nav_sel"), $("#pl_inf_fl").removeClass("pl_nav_sel"), $("#nav_ind").css("left", "179px"), $("#pl_inf").html("<div style='font-size:14px;text-align:center'><div style='font-size:16px;margin-bottom:10px'>Share this Video with others:</div>Permalink:<br><input style='width: 300px;-moz-user-select: all;-ms-user-select: all;-webkit-user-select: all;user-select: all;text-align:center' type='text' value='/watch?v=" + e + "' readonly><br><br>Embed Link:<br><input style='width: 300px;-moz-user-select: all;-ms-user-select: all;-webkit-user-select: all;user-select: all;text-align:center' type='text' value='/embed?v=" + e + "' readonly><br><br><br><a href='#'>Twitter</a> || <a href='#'>Facebook</a> || <a href='#'>Reddit</a></div>")
 }), $("#pl_inf_p").click(function() {
     var e = $("#pl_url").html();
     $("#pl_inf_i").removeClass("pl_nav_sel"), $("#pl_inf_f").removeClass("pl_nav_sel"), $("#pl_inf_s").removeClass("pl_nav_sel"), $("#pl_inf_p").addClass("pl_nav_sel"), $("#pl_inf_fl").removeClass("pl_nav_sel"), $("#nav_ind").css("left", "265px"), $.ajax({

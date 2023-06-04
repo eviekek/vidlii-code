@@ -198,10 +198,10 @@
 											$videos .= '
 												<div style="margin-bottom:20px;">
 													<div style="float:left; margin-right: 5px;">
-														<a href="https://www.vidlii.com/watch?v='.$url.'" title="'.$title.'"><img src="'.$thumb.'" alt="'.$title.'" style="width:120px; border:3px double"></a>
+														<a href="/watch?v='.$url.'" title="'.$title.'"><img src="'.$thumb.'" alt="'.$title.'" style="width:120px; border:3px double"></a>
 													</div>
 													
-													<div><a href="https://www.vidlii.com/watch?v='.$url.'" title="'.$title.'"><b>'.$title.'</b></a></div>
+													<div><a href="/watch?v='.$url.'" title="'.$title.'"><b>'.$title.'</b></a></div>
 													<div>'.$description.'</div>
 													<div style="clear:both"></div>
 												</div>
@@ -267,7 +267,7 @@
 						
 						' . $videos . '
 						You can check where your account\'s current standing by following the link below:
-						https://www.vidlii.com/manage_account
+						/manage_account
 						
 						-Att, the VidLii staff.
 					';

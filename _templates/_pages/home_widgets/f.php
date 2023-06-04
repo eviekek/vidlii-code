@@ -1,7 +1,7 @@
 <? if (!$_USER->logged_in || ($_USER->logged_in && $Modules["featured"])) : ?>
 <div class="wdg" id="ft_widget">
     <div style="background:#dae9fe">
-        <a href="/special_videos?c=0&t=v"><img src="https://www.vidlii.com/img/ft.png" alt="Featured Videos"><span>Featured Videos</span></a>
+        <a href="/special_videos?c=0&t=v"><img src="/img/ft.png" alt="Featured Videos"><span>Featured Videos</span></a>
         <div class="wdg_sel">
             <? if ($_USER->logged_in) : ?>
                 <div class="up1" onclick="move_up('ft_widget')"></div><div class="do1" onclick="move_down('ft_widget')"></div>

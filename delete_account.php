@@ -86,7 +86,7 @@ if (isset($_POST["delete_agree"]) && !$CodeExists) {
 //					<div style="text-align:center;font-size:23px;font-weight:bold;color:#333333;margin:0 0 15px">Delete Your Account</div>
 //					<div style="font-size:14px;line-height: 24px;color:#666666;text-align:center">Click The button below to prove your ownership of the account you are about to terminate.</div>
 //					<div style="margin-top:15px;text-align:center">
-//					<a href="https://www.vidlii.com/terminate?code=' . $Deletion_Code . '" style="padding:10px 20px;border-radius:6px;font-size:16px;color:white;font-weight:bold;text-decoration: none;background-color:#4d90fe">DELETE</a>
+//					<a href="/terminate?code=' . $Deletion_Code . '" style="padding:10px 20px;border-radius:6px;font-size:16px;color:white;font-weight:bold;text-decoration: none;background-color:#4d90fe">DELETE</a>
 //					</div>
 //					</div>
 //					<div style="height:15px"></div>

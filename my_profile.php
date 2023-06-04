@@ -76,7 +76,7 @@ $Birth_Day = ltrim(date("d",strtotime($Birthday)),0);
 
 
 if (!empty($Info["avatar"])) {
-    $Avatar = "https://www.vidlii.com/watch?v=".$Info["avatar"];
+    $Avatar = "/watch?v=".$Info["avatar"];
 } else {
     $Avatar = "";
 }

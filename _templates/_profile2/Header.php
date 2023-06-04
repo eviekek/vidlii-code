@@ -130,7 +130,7 @@
                     <table cellpadding="7" cellspacing="0" style="width: 100%;">
                         <tr>
                             <td>URL:</td>
-                            <td align="right"><a href="https://www.vidlii.com/user/<?= $_USER->displayname ?>">https://www.vidlii.com/user/<?= $_USER->displayname ?></a></td>
+                            <td align="right"><a href="/user/<?= $_USER->displayname ?>">/user/<?= $_USER->displayname ?></a></td>
                         </tr>
                         <tr>
                             <td>Channel Title:</td>
@@ -342,11 +342,11 @@
                     Featured Video
                     <div style="margin: 18px 0 13px">
                         <div style="margin-bottom:4px">For Non-Subscribers</div>
-                        <input type="url" style="width:225px" name="n_url" value="<? if (!empty($Profile["featured_n_url"])) : ?>https://www.vidlii.com/watch?v=<?= $Profile["featured_n_url"] ?><? endif ?>" placeholder="https://www.vidlii.com/watch?v=..." maxlength="128" autocomplete="off">
+                        <input type="url" style="width:225px" name="n_url" value="<? if (!empty($Profile["featured_n_url"])) : ?>/watch?v=<?= $Profile["featured_n_url"] ?><? endif ?>" placeholder="/watch?v=..." maxlength="128" autocomplete="off">
                     </div>
                     <div>
                         <div style="margin-bottom:4px">For Subscribers</div>
-                        <input type="url" style="width:225px" name="s_url" value="<? if (!empty($Profile["featured_s_url"])) : ?>https://www.vidlii.com/watch?v=<?= $Profile["featured_s_url"] ?><? endif ?>" placeholder="https://www.vidlii.com/watch?v=..." maxlength="128" autocomplete="off">
+                        <input type="url" style="width:225px" name="s_url" value="<? if (!empty($Profile["featured_s_url"])) : ?>/watch?v=<?= $Profile["featured_s_url"] ?><? endif ?>" placeholder="/watch?v=..." maxlength="128" autocomplete="off">
                     </div>
                 </div>
             </div>

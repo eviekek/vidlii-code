@@ -99,7 +99,7 @@ if (strpos($Info["avatar"],"u=") !== false) {
 }
 
 if (!empty($Info["avatar"])) {
-    $Avatar = "https://www.vidlii.com/watch?v=".$Info["avatar"];
+    $Avatar = "/watch?v=".$Info["avatar"];
 } else {
     $Avatar = "";
 }

@@ -16,7 +16,7 @@
             <div style="font-weight: bold;font-size:17px;margin:0 0 5px">June Video Contest</div>
             Make a video, upload it, share it<br>
             Theme of June: <strong>VidLii</strong><br>
-            <img src="https://www.vidlii.com/img/Vidlii6.png" width="136" height="88" style="border:3px double dodgerblue;margin: 5px 0 0">
+            <img src="/img/Vidlii6.png" width="136" height="88" style="border:3px double dodgerblue;margin: 5px 0 0">
         </div>
     </div>
     <div class="you_wnt">
@@ -34,7 +34,7 @@
         <div style="height:23px;border-bottom:1px solid #ccc"><span>Random Contest Video</span></div>
         <div style="padding:0;overflow:hidden;border:0">
         </div>
-        <iframe allowfullscreen src="https://www.vidlii.com/embed?v=<?= $Contest_Video["url"] ?>&a=0" frameborder="0" width="320" height="240"></iframe>
+        <iframe allowfullscreen src="/embed?v=<?= $Contest_Video["url"] ?>&a=0" frameborder="0" width="320" height="240"></iframe>
     </div>
     <div style="border:1px solid #ccc;padding:5px;margin-bottom:11px;line-height: 17px">
         <a href="/watch?v=<?= $Contest_Video["url"] ?>" style="font-weight: bold"><?= $Contest_Video["title"] ?></a><br>

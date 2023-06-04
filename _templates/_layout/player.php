@@ -74,8 +74,8 @@
 	<? if ($Status == 2) : ?>
 	var viValues = {
 		variable: "vlp",
-		src: "https://www.vidlii.com/usfi/v/<?= $URL ?>.<?= $FILENAME ?>.mp4",
-		hdsrc: "https://www.vidlii.com/usfi/v/<?= $URL ?>.<?= $FILENAME ?>.720.mp4",
+		src: "/usfi/v/<?= $URL ?>.<?= $FILENAME ?>.mp4",
+		hdsrc: "/usfi/v/<?= $URL ?>.<?= $FILENAME ?>.720.mp4",
 		img: "/usfi/<?= $prev ? "prvw" : "thmp" ?>/<?= $URL ?>.jpg",
 		url: "<?= $URL ?>",
 		duration: <?= $Length ?>,
@@ -104,10 +104,10 @@
 					src: videoInfo.src,
 					hdsrc: <?= $ISHD ? "videoInfo.hdsrc" : "null" ?>,
 					preview: videoInfo.img,
-					videoUrl: "https://www.vidlii.com/watch?v="+videoInfo.url,
+					videoUrl: "/watch?v="+videoInfo.url,
 					duration: videoInfo.duration,
 					autoplay: videoInfo.autoplay,
-					skin: "https://www.vidlii.com/vlPlayer/skins/"+videoInfo.skin,
+					skin: "/vlPlayer/skins/"+videoInfo.skin,
 					adjust: videoInfo.adjust,
 					btcolor: videoInfo.btcolor,
 					bgcolor: videoInfo.bgcolor,
@@ -132,7 +132,7 @@
 			var modernPlayer = new ModernPlayer({
 				instance: jwplayer("vlplayer"),
 				duration: videoInfo.duration,
-				videoUrl: "https://www.vidlii.com/watch?v="+videoInfo.url,
+				videoUrl: "/watch?v="+videoInfo.url,
 				src: videoInfo.src,
 				hdsrc: <?= $ISHD ? "videoInfo.hdsrc" : "null" ?>,
 				startinhd: <?= isset($_COOKIE["vlphd"]) && $_COOKIE["vlphd"] == "1" ? "true" : "false" ?>,

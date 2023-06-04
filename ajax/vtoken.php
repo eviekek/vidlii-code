@@ -7,7 +7,7 @@ session_start();
 
 // If referer is not from VidLii, reject
 $origin = $_SERVER['HTTP_REFERER'];
-if (strpos($origin, "https://www.vidlii.com") !== 0) {
+if (strpos($origin, "") !== 0) {
 	if (strpos($origin, "https://vidlii.com") !== 0) {
 		die("error");
 	}	
@@ -65,14 +65,14 @@ if ($vid_id != $_POST["u"] && strlen($vid_id) == 11) {
 
                         } elseif (mb_strpos($Source, "/user/") !== false) {
 
-                            $Source = str_replace("https://www.vidlii.com/user/", "", $Source);
+                            $Source = str_replace("/user/", "", $Source);
 
                             $Username = $DB->execute("SELECT username FROM users WHERE displayname = :SOURCE", true, [":SOURCE" => $Source]);
 
                             if ($DB->RowNum == 0) { $Source = ""; }
                             else                  { $Source = "?".$Username["username"]; }
 
-                        } elseif ($Source == "https://www.vidlii.com/") {
+                        } elseif ($Source == "/") {
 
                             $Source = "h";
 

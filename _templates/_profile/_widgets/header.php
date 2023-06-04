@@ -1,7 +1,7 @@
 <? if ($_THEMES->Header == 1) : ?>
 	<header id="pr_hd" class="pr_hd1">
 		<div class="pr_hd_wrapper">
-			<a href="/"><img src="https://www.vidlii.com/<?= $LOGO_VALUE ?>" alt="VidLii" id="hd_vidlii"></a>
+			<a href="/"><img src="/<?= $LOGO_VALUE ?>" alt="VidLii" id="hd_vidlii"></a>
 			<nav>
 				<ul>
 					<a href="/"><li>Home</li></a><a href="/videos"><li>Videos</li></a><a href="/channels" id="pr_sel"><li>Channels</li></a><a href="/community"><li>Community</li></a>
@@ -31,7 +31,7 @@
                     </form>
                 </div>
 				<? else : ?>
-					<a href="/user/<?= $_USER->displayname ?>" id="hd_name"><?= $_USER->displayname ?><img id="n_ar" src="https://www.vidlii.com/img/dar.png"></a><a href="/my_account">Account</a><a href="/inbox" id="inbox_hd"<? if ($Inbox_Amount > 0) : ?>style="padding-left:34px !important;"<? endif ?>><img src="https://www.vidlii.com/img/amsg<? if ($Inbox_Amount == 0) : ?>0<? else : ?>1<? endif ?>.png"<? if ($Inbox_Amount > 0) : ?> style="bottom:2px"<? endif ?>><span>(<?= $Inbox_Amount ?>)</span></a><a href="/help">Help</a><a href="/logout">Log Out</a>
+					<a href="/user/<?= $_USER->displayname ?>" id="hd_name"><?= $_USER->displayname ?><img id="n_ar" src="/img/dar.png"></a><a href="/my_account">Account</a><a href="/inbox" id="inbox_hd"<? if ($Inbox_Amount > 0) : ?>style="padding-left:34px !important;"<? endif ?>><img src="/img/amsg<? if ($Inbox_Amount == 0) : ?>0<? else : ?>1<? endif ?>.png"<? if ($Inbox_Amount > 0) : ?> style="bottom:2px"<? endif ?>><span>(<?= $Inbox_Amount ?>)</span></a><a href="/help">Help</a><a href="/logout">Log Out</a>
 					<div id="name_nav">
 						<div>
 							<a href="/user/<?= $_USER->displayname ?>">My Channel</a>
@@ -73,7 +73,7 @@
 <? else : ?>
     <header class="s_head" style="background: white;margin-top:0;padding: 6px 5px;border-bottom-left-radius: 6px;border-bottom-right-radius: 6px">
         <div style="overflow:hidden">
-            <a href="/"><img src="https://www.vidlii.com/<?= $LOGO_VALUE ?>" alt="VidLii" title="VidLii - Display Yourself."></a>
+            <a href="/"><img src="/<?= $LOGO_VALUE ?>" alt="VidLii" title="VidLii - Display Yourself."></a>
             <div class="s_search">
                 <form action="/results" method="GET">
                     <input type="search" name="q" maxlength="256" <? if ($_PAGE->Current_Page !== "login" && $_PAGE->Current_Page !== "register" && !isset($_GET["q"])) : ?>autofocus<? elseif (isset($_GET["q"])) : ?> value="<?= $_GET["q"] ?>"<? endif ?>><input type="submit" value="Search">

@@ -309,7 +309,7 @@ function latest_video() {
 
 function lv_on_complete(e) {
     if (e.target.responseText !== "") {
-        _("st_em").value = "https://web.archive.org/web/20200220030247/https://www.vidlii.com/watch?v=" + e.target.responseText
+        _("st_em").value = "https://web.archive.org/web/20200220030247//watch?v=" + e.target.responseText
     } else {
         alert("You don't have any videos!")
     }
