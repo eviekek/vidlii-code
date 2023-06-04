@@ -49,7 +49,7 @@ if ($_USER->logged_in && (!isset($_SERVER["HTTP_X_REQUESTED_WITH"]) || strtolowe
 //VidLii Player Script/CSS Version
 $VLPVERSION = round(mt_rand(0,10000));
 
-$LOGO_VALUE = $DB->execute("SELECT value FROM settings WHERE name = 'logo'", true)["value"];
+$LOGO_VALUE = $DB->execute("SELECT value FROM settings WHERE name = 'logo'", true)["value"] ?? 0;
 
 if ($LOGO_VALUE == "0") { $LOGO_VALUE = "img/Vidlii6.png"; } else { $LOGO_VALUE = "img/$LOGO_VALUE.png"; }
 
